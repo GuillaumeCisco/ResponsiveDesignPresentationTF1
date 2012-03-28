@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="iso-8859-1" />
+		<meta name="viewport" content="width=1024" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<title>Responsive Design presentation</title>
+		
+		<meta name="description" content="responsive design presentation made with impressive.js" />
+		<meta name="author" content="Bartek Szopka" />
+
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+		<link href="css/impress-demo.css" rel="stylesheet" /> 
+		<link rel="shortcut icon" href="favicon.png" />
+		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+	</head>
+	<body class="impress-not-supported">
+
+		<div class="fallback-message">
+			<p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+			<p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+		</div>
+
+		<div id="impress">
+			<div id="bored" class="step slide" data-x="0" data-y="-1500">
+				<h1>Responsive Design</h1>
+				<img alt="pictos" src="img/pictos.png"/>
+			</div>
+			<div class="step slide" data-x="1000" data-y="-1500">
+				<h1>Définition</h1>
+				<p>un même site doit pouvoir <strong>s’adapter</strong> lui-même aux différentes résolutions d’écrans… et donc son <strong>contenu</strong> aussi !</p>
+			</div>
+			<div class="step slide" data-x="2000" data-y="-1500">
+				<h1>Historique</h1>
+				<p>Introduit par les grid Frameworks</p>
+				<p>- BluePrint CSS</p>
+				<p>- Skeleton</p>
+				<p>- 960px Grid System</p>
+			</div>
+			<div class="step slide" data-x="3000" data-y="-1500">
+				<h1>Exemple</h1>
+				<a href="http://webdesignerwall.com/demo/adaptive-design/final.html" target="_blank"><img alt="exemple" src="img/exemple.jpg"></a>
+			</div>
+			<div class="step slide" data-x="4000" data-y="-1500">
+				<h1>Quels elements sont mis en jeu ?</h1>
+				<p>- le layout (colonnes)</p>
+				<p>- les images et videos</p>
+				<p>- les typographies</p>
+				<p>- la couche javascript</p>
+				<p>- le poids</p>
+			</div>
+			<div class="step slide" data-x="5000" data-y="-1500">
+				<h1>La mise en page</h1>
+				<p>- "liquid css"</p>
+				<p>- Bibliotheques javascript</p>
+				<p>- Media Queries (CSS3)</p>
+				<pre>/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+}</pre>
+			</div>
+			<div id="ing" class="step slide" data-x="6000" data-y="-1500">
+				<h1>Les images</h1>
+				<p>- <b class="scaling">Redimensionner</b></p>
+				<p>- <b class="positioning">Deplacer</b></p>
+				<p>- Croper</p>
+				<p>- Cacher</p>
+				<p>- <a href="http://filamentgroup.com/examples/responsive-images/" target="_blank">Servir des images differentes cote serveur</a></p>
+			</div>
+			<div class="step slide" data-x="7000" data-y="-1500">
+				<h1>Les typographies</h1>
+				<p>- Taille en pourcentage</p>
+				<p>- Javascript : <a href="http://fittextjs.com/">FitText</a></p>
+			</div>
+			<div class="step slide" data-x="8000" data-y="-1500">
+				<h1>La couche javascript</h1>
+				<p>- Elaguer au maximum les fonctionnalites</p>
+				<p>- Curseur VS Tactile</p>
+			</div>
+			<div class="step slide" data-x="9000" data-y="-1500">
+				<h1>Les limites</h1>
+				<p>- Long a developper</p>
+				<p>- Necessite plus de connaissances</p>
+				<p>- Cout plus eleve $ et C</p>
+				<p>- Moins de creativite</p>
+				<p>- Plus de code, plus de maj</p>
+				<p>- Differents navigateurs</p>
+			</div>
+			<div class="step slide" data-x="10000" data-y="-1500">
+				<h1>Bonus</h1>
+				<p><a href="http://www.woothemes.com/flexslider/flexslider-demo/" target="_blank">Flex Slider</a></p>
+				<p><a href="http://code.google.com/p/css3-mediaqueries-js/" target="_blank">css3-mediaqueries.js</a></p>
+				<p><a href="http://daverupert.com/2011/09/responsive-video-embeds-with-fitvids/" target="_blank">FitVids</a></p>
+			</div>			
+		</div>
+		
+		<div class="hint">
+			<p>Use a spacebar or arrow keys to navigate</p>
+		</div>
+		<script>
+			if ("ontouchstart" in document.documentElement) { 
+				document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+			}
+		</script>
+		<script src="js/impress.js"></script>
+		<script>impress().init();</script>
+		
+	</body>
+</html>
